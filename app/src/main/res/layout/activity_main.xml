@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/action_calc"
+        android:nextFocusUp="@id/action_calc"
+        android:nextFocusLeft="@id/action_calc"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:maxLines="1"
+        android:inputType="number|textAutoComplete"
+        android:hint="@string/input_action" />
+
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_calc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:text="@string/send" />
+
+</RelativeLayout>
